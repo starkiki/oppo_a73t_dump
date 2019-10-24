@@ -1,0 +1,11 @@
+service audioserver /system/bin/audioserver
+    class main
+    user audioserver
+    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+#ifdef VENDOR_EDIT
+#YaJun.Li@PSW.MultiMedia.AudioServer.FrameWork, 2017/06/24, enable read proc permission
+   #group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct system net_bt_stack sdcard_rw
+    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct system net_bt_stack sdcard_rw readproc
+#endif /*VENDOR_EDIT*/
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks

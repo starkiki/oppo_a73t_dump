@@ -1,0 +1,12 @@
+<!-- This file is used by Exp.  DO NOT MODIFY. -->
+
+<permissions>
+  <feature name="oppo.version.exp" />
+  <!-- Likuan.Ren@Prd6.System.BuildConfig.Config.Feature , 2016/10/18, add for Exp AFW and RuntimePermission -->
+  <feature name="android.software.managed_users" />
+  <feature name="oppo.runtime.permission.alert.support" />
+  <!-- Zequan.Wang@Prd6.System.OppoFeature.ProtectEyes, 2016/12/14, add for protect eyes -->
+  <feature name="oppo.eye.protection.support" />
+  <!-- Minglu.Tu@plf.Framework, 2017/08/11, Add feature for story 1072290 default chrome browser in !IN area -->
+  <feature name="oppo.exp.default.browser" />
+</permissions>

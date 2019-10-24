@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <version>20170713</version>
+    <isOpen>1</isOpen>
+    <filter-name>sys_secrecy_switch_list</filter-name>
+    <support>true</support>
+    <activity_sw>false</activity_sw>
+    <log_sw>false</log_sw>
+    <adb_sw>true</adb_sw>
+    <test_sw>false</test_sw>
+    <!-- Time out for mac 24 * 60 min -->
+    <mac_timeout>1440</mac_timeout>
+    <!-- Time out for id 30 * 24 * 60 min -->
+    <id_timeout>43200</id_timeout>
+    <!-- *#36446337# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.EngineeringMode" />
+    <!-- *#8778# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.manualtest.MasterClear" />
+    <!-- *#806# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.autoaging.AutoAgingMainListActivity" />
+    <!-- *#37847# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.device.DeviceListActivity" />
+    <!-- *#649010# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.qualcomm.DiagEnabled" />
+    <!-- *#268# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.qualcomm.QualCommActivity" />
+    <!-- *#818#/*#838# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.network.NetworkSearch_New" />
+    <!-- *#727# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.manualtest.SarTest" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.rftest.LteSarTest" />
+    <!-- *#7332# -->
+    <activity packageName="com.oppo.rftoolkit"  className="com.oppo.rftoolkit.RfToolkitFactory" />
+    <!-- *#7328# -->
+    <activity packageName="com.oppo.rftoolkit"  className="com.oppo.rftoolkit.RfToolkitAgingTest" />
+    <!-- *#7327# -->
+    <activity packageName="com.oppo.rftoolkit"  className="com.oppo.rftoolkit.RfToolkitCustomerService" />
+    <!-- *#804# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.network.NetworkSearch" />
+    <!-- *#872# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.UsbPreloaderEnabled" />
+    <!-- *#391# -->
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.SwitchSoftwareVersion" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.wifitest.WifiFTMActivity" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.RebootManager" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.wireless.WifiSocketHelper" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.wireless.WifiAdbHelper" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.wireless.SwitchWifiAdbHelper" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.wireless.SwitchMetaModeHelper" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.DetectMasterClearResult" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.SwitchColorActivation" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.ShowRemoteMessage" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.ResetTestMark" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.PowerOff" />
+    <activity packageName="com.oppo.engineermode"  className="com.oppo.engineermode.manualtest.modeltest.ModelTestImpl" />
+</filter-conf>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<WHITELIST>
+    <PerfService>
+        <Package name="com.meitu.makeup">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+                <CMD_SET_VCORE_MIN Param1="1"/>
+                <CMD_SET_VCORE_MIN_DDR3 Param1="0"/>
+                <CMD_SET_BWC_PERF Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.maimiao.live.tv">
+            <Activity name="Common">
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.longzhu.tga">
+            <Activity name="Common">
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.qiyi.video">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+                <CMD_SET_VCORE_MIN Param1="1"/>
+                <CMD_SET_VCORE_MIN_DDR3 Param1="0"/>
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="tv.pps.mobile">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+                <CMD_SET_VCORE_MIN Param1="1"/>
+                <CMD_SET_VCORE_MIN_DDR3 Param1="0"/>
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.tencent.qqlive">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+                <CMD_SET_VCORE_MIN Param1="1"/>
+                <CMD_SET_VCORE_MIN_DDR3 Param1="0"/>
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="air.tv.douyu.android">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+                <CMD_SET_VCORE_MIN Param1="1"/>
+                <CMD_SET_VCORE_MIN_DDR3 Param1="0"/>
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.pplive.androidphone">
+            <Activity name="Common">
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.letv.android.client">
+            <Activity name="Common">
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.maimiao.live.tv">
+            <Activity name="Common">
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.longzhu.tga">
+            <Activity name="Common">
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.qiyi.video">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+                <CMD_SET_VCORE_MIN Param1="1"/>
+                <CMD_SET_VCORE_MIN_DDR3 Param1="0"/>
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="tv.pps.mobile">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+                <CMD_SET_VCORE_MIN Param1="1"/>
+                <CMD_SET_VCORE_MIN_DDR3 Param1="0"/>
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.tencent.qqlive">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+                <CMD_SET_VCORE_MIN Param1="1"/>
+                <CMD_SET_VCORE_MIN_DDR3 Param1="0"/>
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="air.tv.douyu.android">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+                <CMD_SET_VCORE_MIN Param1="1"/>
+                <CMD_SET_VCORE_MIN_DDR3 Param1="0"/>
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.pplive.androidphone">
+            <Activity name="Common">
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.letv.android.client">
+            <Activity name="Common">
+                <CMD_SET_FBC_ALWAYS_ON Param1="1"/>
+            </Activity>
+        </Package>
+        <Package name="com.mt.mtxx.mtxx">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="100"/>
+            </Activity>
+        </Package>
+        <Package name="com.smile.gifmaker">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="60"/>
+            </Activity>
+        </Package>
+        <Package name="com.tencent.ttpic">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="60"/>
+            </Activity>
+        </Package>
+        <Package name="vStudio.Android.Camera360">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="60"/>
+            </Activity>
+        </Package>
+        <Package name="com.meelive.ingkee">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="60"/>
+            </Activity>
+        </Package>
+        <Package name="com.youku.crazytogether">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+            </Activity>
+        </Package>
+        <Package name="com.lemon.faceu">
+            <Activity name="Common">
+                <CMD_SET_TA_BOOST_VALUE Param1="1100"/>
+            </Activity>
+        </Package>
+        <Package name="com.instagram.android">
+            <Activity name="com.instagram.modal.TransparentModalActivity">
+                <CMD_SET_BWC_PERF Param1="2"/>
+                <CMD_SET_TA_BOOST_VALUE Param1="60"/>
+                <CMD_SET_VCORE_MIN Param1="1"/>
+                <CMD_SET_VCORE_MIN_DDR3 Param1="0"/>
+            </Activity>
+        </Package>
+    </PerfService>
+</WHITELIST>

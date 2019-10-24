@@ -1,0 +1,8 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.phone.hdvoice" />
+  <feature name="oppo.phone.video.call"/>
+  <feature name="oppo.common_center.number.recognition" />
+  <feature name="oppo.mms.verification.code.identify" />
+  <feature name="oppo.keyguard.india.emergency" />
+</permissions>

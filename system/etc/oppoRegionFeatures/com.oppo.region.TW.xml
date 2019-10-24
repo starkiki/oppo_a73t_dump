@@ -1,0 +1,7 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.phone.answerordelay" />
+ <!-- <feature name="oppo.phone.wifi.calling" />-->
+  <feature name="oppo.mms.cellbroadcast.show" />
+  <feature name="oppo.phone.harass.intercept.off" />
+</permissions>

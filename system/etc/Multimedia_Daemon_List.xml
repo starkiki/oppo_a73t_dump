@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<filter-conf>
+  <version>20180511</version>
+  <isOpen>true</isOpen>
+  <filter-name>Multimedia_Daemon_List</filter-name>
+    <dirac>
+        <name>com.oppo.music</name>
+        <attribute>music</attribute>
+
+        <name>com.oppo.video</name>
+        <attribute>video</attribute>
+    </dirac>
+
+    <volume>
+        <name>com.tencent.tvoem</name>
+        <attribute>forbid</attribute>
+
+        <name>com.cdbabyjoy.ecepark</name>
+        <attribute>streammute</attribute>
+
+        <name>com.hifimusic.player</name>
+        <attribute>streammute</attribute>
+
+        <name>air.tv.douyu.android</name>
+        <attribute>no_need_mute_in_call</attribute>
+
+        <name>com.tencent.qqlive</name>
+        <attribute>no_need_mute_in_call</attribute>
+
+        <name>null</name>
+        <attribute>no_need_mute_in_ringing</attribute>
+
+        <name>com.smile.gifmaker</name>
+        <attribute>kill</attribute>
+
+        <name>com.coloros.findmyphone</name>
+        <attribute>permit</attribute>
+
+        <name>android.media.cts</name>
+        <attribute>permit</attribute>
+
+        <name>com.android.systemui</name>
+        <attribute>permit</attribute>
+
+        <name>com.ting.mp3.android</name>
+        <attribute>permit</attribute>
+    </volume>
+
+    <control>
+        <name>MultimediaService</name>
+        <attribute>true</attribute>
+
+        <name>setMode</name>
+        <attribute>true</attribute>
+
+        <name>recordConflict</name>
+        <attribute>false</attribute>
+
+        <name>streamAdjust</name>
+        <attribute>true</attribute>
+
+        <name>setspeakerphoneOn</name>
+        <attribute>true</attribute>
+
+        <name>killMediaserver</name>
+        <attribute>true</attribute>
+
+        <name>streamMute</name>
+        <attribute>true</attribute>
+
+        <name>killApp</name>
+        <attribute>true</attribute>
+
+        <name>releaseAudiotrack</name>
+        <attribute>true</attribute>
+
+        <name>setBluetoothScoOn</name>
+        <attribute>true</attribute>
+
+        <name>setMicrophoneMute</name>
+        <attribute>false</attribute>
+
+        <name>smartvolumeRing</name>
+        <attribute>true</attribute>
+
+        <name>setStreamVolume</name>
+        <attribute>true</attribute>
+
+        <name>checkSuspendException</name>
+        <attribute>true</attribute>
+    </control>
+
+    <zenmode>
+        <name>com.tencent.mobileqq</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.mm</name>
+        <attribute>wechat_mute</attribute>
+
+        <name>com.zing.zalo</name>
+        <attribute>null</attribute>
+    </zenmode>
+
+    <record-conflict>
+        <name>com.tencent.mobileqq</name>
+        <attribute>5000</attribute>
+
+        <name>com.google.android.googlequicksearchbox</name>
+        <attribute>record-no-hint</attribute>
+
+        <name>me.pou.app</name>
+        <attribute>record-no-hint</attribute>
+
+        <name>com.campmobile.snowcamera</name>
+        <attribute>record-no-hint</attribute>
+    </record-conflict>
+
+    <sco-on-delay>
+        <name>com.tencent.mm</name>
+        <attribute>50</attribute>
+    </sco-on-delay>
+
+    <media-codec>
+        <name>com.google.android.youtube</name>
+        <attribute>OMX.MTK.VIDEO.DECODER.VP9</attribute>
+
+        <name>com.tencent.mm</name>
+        <attribute>OMX.MTK.VIDEO.DECODER.VC1</attribute>
+    </media-codec>
+
+    <at-sampleRate>
+        <name>com.tencent.mobileqq</name>
+        <attribute>16000</attribute>
+    </at-sampleRate>
+
+    <disable-oppomedia>
+        <name>com.duoduo.child.story</name>
+        <attribute>null</attribute>
+    </disable-oppomedia>
+
+    <disable-remoteplayer>
+        <name>com.bsb.hike</name>
+        <attribute>false</attribute>
+
+        <name>com.gbwhatsapp</name>
+        <attribute>false</attribute>
+    </disable-remoteplayer>
+
+    <game-bt-noise>
+        <name>com.tencent.feiji</name>
+        <attribute>null</attribute>
+
+        <name>com.netease.my</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.mhxy.sqsy</name>
+        <attribute>null</attribute>
+
+        <name>com.tencent.tmgp.pvz2</name>
+        <attribute>null</attribute>
+
+        <name>com.popcap.pvz2</name>
+        <attribute>null</attribute>
+    </game-bt-noise>
+
+    <game-ull-pop>
+        <name>com.tencent.tmgp.pvz2</name>
+        <attribute>null</attribute>
+
+        <name>com.popcap.pvz2</name>
+        <attribute>null</attribute>
+    </game-ull-pop>
+
+    <game-forbid-voice>
+        <name>com.tencent.tmgp.sgame</name>
+        <attribute>null</attribute>
+    </game-forbid-voice>
+
+    <acodec-buffer>
+        <name>com.tencent.qqlive</name>
+        <attribute>true</attribute>
+    </acodec-buffer>
+
+    <record-delay>
+        <name>com.eg.android.AlipayGphone</name>
+        <attribute>null</attribute>
+    </record-delay>
+
+     <audiotrack-release>
+        <name>com.android.systemui</name>
+        <attribute>null</attribute>
+    </audiotrack-release>
+
+    <audiotrack-no-fast>
+        <name>com.haochang.chunk</name>
+        <attribute>no-fast</attribute>
+
+        <name>com.youku.phone</name>
+        <attribute>no-fast</attribute>
+
+        <name>com.tudou.android</name>
+        <attribute>no-fast</attribute>
+
+        <name>com.ludia.jurassicworld</name>
+        <attribute>no-fast</attribute>
+    </audiotrack-no-fast>
+
+    <skia-rotate>
+        <name>com.tencent.mm</name>
+        <attribute>null</attribute>
+
+        <name>com.hlg.daydaytobusiness</name>
+        <attribute>null</attribute>
+    </skia-rotate>
+
+    <audiotrack-volume-limit>
+        <name>com.cmplay.tiles2_cn</name>
+        <attribute>5</attribute>
+
+        <name>com.cmplay.tiles2</name>
+        <attribute>5</attribute>
+
+        <name>com.tencent.tmgp.tiles2</name>
+        <attribute>5</attribute>
+    </audiotrack-volume-limit>
+
+    <blocking-mic-detecting>
+        <name>com.tencent.mm</name>
+        <attribute>null</attribute>
+    </blocking-mic-detecting>
+
+</filter-conf>

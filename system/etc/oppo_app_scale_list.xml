@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<filter-conf>
+    <version>2017061421</version>
+    <isOpen>1</isOpen>
+    <filter-name>oppo_app_scale_list</filter-name>
+    <game>
+        <PackageName>com.imangi.templerun2</PackageName>
+        <scale>1.5</scale>
+    </game>
+    <game>
+        <PackageName>com.kiloo.subwaysurf</PackageName>
+        <scale>1.5</scale>
+    </game>
+    <game>
+        <PackageName>com.netease.dhxy.nearme.gamecenter</PackageName>
+        <scale>1.3333</scale>
+    </game>
+    <game>
+        <PackageName>org.cocos2d.fishingjoy3</PackageName>
+        <scale>1.5</scale>
+    </game>
+    <game>
+        <PackageName>com.gbits.atm.nearme.gamecenter</PackageName>
+        <scale>1.3333</scale>
+    </game>
+    <game>
+        <PackageName>com.nextwave.wcc2</PackageName>
+        <scale>1.5</scale>
+    </game>
+    <game>
+        <PackageName>com.Zigacu.DownHillBikeSimulatorMultiplayer</PackageName>
+        <scale>1.5</scale>
+    </game>
+</filter-conf>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<filter-conf>
+    <version>20180103</version>
+    <isOpen>1</isOpen>
+    <filter-name>sys_luckymoney_config_list</filter-name>
+    <keyURLinfo>wx.gtimg.com/hongbao/</keyURLinfo>
+    <keyDNSinfo>wx.gtimg.com</keyDNSinfo>
+    <delayTimeout>60000</delayTimeout>
+    <boostTimeout>1500</boostTimeout>
+    <Qtag>Q.msg.TroopMsgProxy</Qtag>
+    <Qmsg>msgType:-2025</Qmsg>
+    <MM_version>
+        <version mode="1" start="0" end="1200"></version>
+        <version mode="2" start="1200" end="1201">
+        </version>
+        <version mode="2" start="1201" end="1340">
+        </version>
+    </MM_version>
+    <MM_mode>
+        <mode id="1" start="0" end="1200"></mode>
+        <mode id="2" start="1200" end="1340">
+            <receiver_class>com.tencent.mm.booter.NotifyReceiver</receiver_class>
+            <hg_hash>AE13530B413F1E6342F1CDBAB126A939</hg_hash>
+            <hb_width>117</hb_width>
+            <hb_height>117</hb_height>
+        </mode>
+    </MM_mode>
+</filter-conf>

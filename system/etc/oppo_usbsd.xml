@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<oppo-usb>
+    <internalsd>/storage/emulated/0</internalsd>
+    <externalsd>/storage/sdcard1</externalsd>
+    <otgpath>/storage/usbotg</otgpath>
+    <otgpath>/storage/usbotgA</otgpath>
+    <otgpath>/storage/usbotgB</otgpath>
+    <otgpath>/storage/usbotgC</otgpath>
+    <otgpath>/storage/usbotgD</otgpath>
+    <otgpath>/storage/usbotgE</otgpath>
+    <otgpath>/storage/usbotgF</otgpath>
+</oppo-usb>

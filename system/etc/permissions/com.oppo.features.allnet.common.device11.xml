@@ -1,0 +1,23 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<permissions>
+    <!-- Fangfang.Hui@PSW.Android.Ota, 2016/12/08, Add for only support encrypted package to update -->
+    <feature name="oppo.package.encrypt.support.only" />
+    <!-- Jian.Wang@PSW.Android.Fingerprint, 2017/06/30, Add for Fingerprint -->
+    <feature name="oppo.fingerprint.support" />
+    <feature name="oppo.back.touch.fingerprint.sensor" />
+    <!-- Xiaori.Yuan@MultiMedia.Display.Feature, 2017/07/04, Add this for protect eyes -->
+    <feature name="oppo.eyeprotect.support" />
+    <!-- Ling.Guo@PSW.MM.Display.Feature, 2017/08/21, Add this for high brightness mode -->
+    <feature name="oppo.high.brightness.support" />
+    <!-- Haiping.Zhong@PSW.Android.BuildConfig, 2017/08/07, Add for CommonSoft sensor feature step and gyroscope -->
+    <feature name="android.hardware.sensor.stepcounter" />
+    <feature name="android.hardware.sensor.stepdetector" />
+    <!-- Jialin.Pi@Apps.Settings 2017/09/07, feature only not use in 17071 and 17371 in MTK6767 -->
+    <feature name="oppo.breath.light.support" />
+    <!-- Changwei.Li@ROM.SDK, 2017/10/12, add support display compat-->
+    <feature name="oppo.display.compat.support" />
+    <!-- Lan.Wang@plf.Framework, 2017/07/12, Add multi app feature -->
+    <feature name="oppo.multiapp.support" />
+    <!-- Fangfang.Hui@PSW.AD.FaceRecognition.1070880, 2017/10/28, Add for Face recognition support -->
+    <feature name="oppo.hardware.face.support" />
+</permissions>

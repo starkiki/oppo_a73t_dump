@@ -1,0 +1,64 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<!-- COLOR_EDIT.  add oppo.screen.hovering.support ;remove oppo.narrow.frame -->
+<permissions>
+    <feature name="oppo.hw.manufacturer.mtk" />
+    <feature name="mtk.gemini.support" />
+
+	<feature name="oppo.inexact.alarm" />
+	<feature name="oppo.filtrated.app" />
+	<feature name="oppo.memory.auto.deep.clean" />
+	<feature name="oppo.memory.auto.clean" />
+	<feature name="oppo.screen.hovering.support" />
+	<feature name="oppo.black.gesture.proximitysensor.support" />
+	<feature name="oppo.brightness.mode.automatic" />
+	<!-- #ifdef VENDOR_EDIT-->
+	<!-- PengNan@CHG.BSP 2016/1/14, recover feature -->
+	<feature name="oppo.otg.connection.menu.support" />
+	<!-- #endif VENDOR_EDIT-->
+	<feature name="android.hardware.usb.host" />
+	<feature name="oppo.app2sd.disabled" />
+	<feature name="oppo.guard.elf.support" />
+	<!-- #ifndef VENDOR_EDIT -->
+	<!-- Jinshui.Liu@Camera 20160630 remove quick shot feature -->
+	<!-- feature name="oppo.quick.shot.support" -->
+	<!-- #endif VENDOR_EDIT -->
+    <!-- #ifdef VENDOR_EDIT-->
+    <!-- Wei.Wang@Swdp.Android.BuildConfig.BaseConfig, 2015/12/15, Add feature -->
+    <feature name="oppo.fulldiskencryption.unsupported" />
+    <feature name="oppo.battery.notify.new" />
+    <!-- #endif VENDOR_EDIT-->
+    <!-- jizhengkang@Plf.Framework, 2016/04/15, Add feature -->
+    <feature name="oppo.sw.solution.rom" />
+    <!-- #endif COLOROS_EDIT-->
+    <!-- Changwei.Li@SDK, 2016/03/29, Add for tp limit support -->
+    <feature name="oppo.tp.limit.support" />
+    <!-- Ling.guo@PSW.MultiMedia.Display.Machine, 2016/05/05  Add autobacklight  -->
+    <feature name="oppo.autobrightctl.animation.support" />
+    <feature name="oppo.multibits.dimming.support" />
+    <!-- Runsheng.Pei@PSW.Android.Ams.Broadcast.Optimize, 2016/07/20, Add for oppo broadcast optimize: -->
+    <feature name="oppo.ams.broadcast.oppobt" />
+    <feature name="oppo.ams.broadcast.jumpqueue" />
+    <feature name="oppo.ams.broadcast.adjust.pbrecque" />
+    <feature name="oppo.ams.broadcast.adjust.obrecque" />
+    <feature name="oppo.ams.broadcast.filter.power" />
+    <!-- Yinqi.Xiong@Swdp.Android.BuildConfig, 2016/08/05, add for recognizing oppo device: -->
+    <feature name="oppo.sw.solution.device"  />
+    <!-- GuoDong.Huang@plf.Framework, 2016/07/28, add for OppoAlarmAlignment -->
+    <feature name="oppo.Align.alarm.support"  />
+    <!-- Yinqi.Xiong@Swdp.Android.Power.PowerMonitor, 2016/12/05, add for net wake up control: -->
+    <feature name="oppo.performance.power.netwake"  />
+    <!-- Bin.Wang@Plf.Framework, 2017/07/10, add for app protect oneself from clear, suspend or intercept-->
+    <feature name="oppo.selfprotect.support"/>
+    <!-- #ifdef VENDOR_EDIT-->
+    <!-- Minglu.Tu@plf.Framework, 2017/07/12, Add feature -->
+    <feature name="oppo.securitypay.support"  />
+    <feature name="oppo.jobscheduler.support"  />
+    <feature name="oppo.childspace.support"  />
+    <feature name="oppo.launcher.download.progress.support"  />
+    <feature name="oppo.support.single.partition"  />
+    <!-- #endif VENDOR_EDIT-->
+    <!-- Runsheng.Pei@PSW.Android.Ams, 2017/05/15, Add for control unnormal activity start frequecy.-->
+    <feature name="oppo.ams.act.freqcontrol" />
+    <!-- Jialin.Pi@Apps.Settings, 2017/09/06, add for Settings bugId:1078232, only for MTK6763 -->
+    <feature name="oppo.settings.system_start_loading.support"/>
+</permissions>

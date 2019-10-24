@@ -1,0 +1,25 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+
+<permissions>
+    <!-- Fangfang.Hui@PSW.Android.Ota, 2016/12/08, add for only support encrypted package to update -->
+    <feature name="oppo.package.encrypt.support.only" />
+    <!-- Jian.Wang@PSW.Android.Fingerprint, 2017/06/30, Add for Fingerprint -->
+    <feature name="oppo.fingerprint.support" />
+    <feature name="oppo.back.touch.fingerprint.sensor" />
+    <!-- Xiaori.Yuan@PSW.MultiMedia.Display.Feature, 2017/07/04, add this for protect eyes -->
+    <feature name="oppo.eyeprotect.support" />
+    <!-- Xing.Xiong@EXP.TP.Funtion, 2017/07/17, Add for blackgesture -->
+    <feature name="oppo.lcd.first.tp.last.support"/>
+    <!-- Zequan.Wang@EXP.AD.BuildConfig, 2017/07/27, Add for bug 1064844 opera browser not in build -->
+    <feature name="oppo.operabrowser.notsupport" />
+    <!-- Haiping.Zhong@PSW.Android.BuildConfig, 2017/08/07, Add for CommonSoft sensor feature step and gyroscope -->
+    <feature name="android.hardware.sensor.gyroscope" />
+    <!-- Rongchun.Zhang@PSW.MM.Display.LCD.Machine, 2017/09/14, Add for outdoor mode -->
+    <feature name="oppo.outdoor.brightness.support" />
+    <!-- Changwei.Li@ROM.SDK, 2017/10/12, add support display compat-->
+    <feature name="oppo.display.compat.support" />
+    <!-- Lan.Wang@plf.Framework, 2017/07/12, Add multi app feature -->
+    <feature name="oppo.multiapp.support" />
+    <!-- Fangfang.Hui@PSW.AD.FaceRecognition.1070880, 2017/10/28, Add for Face recognition support -->
+    <feature name="oppo.hardware.face.support" />
+</permissions>

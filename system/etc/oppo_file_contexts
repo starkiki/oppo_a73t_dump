@@ -1,0 +1,134 @@
+#ifdef VENDOR_EDIT
+#Jiemin.Zhu@Swdp.Android.SELinux, 2016/05/26, add for oppo  customization
+
+/system/bin/tcpdump                         u:object_r:tcpdump_exec:s0
+/system/bin/rotorsrv                        u:object_r:rotorsrv_exec:s0
+/dev/m1120                                  u:object_r:m1120_device:s0
+#ifdef VENDOR_EDIT
+# Jiemin.Zhu@Swdp.Android.SELinux, 2015/04/03, add for change odb context to adb
+/dev/android_odb.*	u:object_r:adb_device:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+# Jiemin.Zhu@Swdp.Android.SELinux, 2015/05/22, add for selinux policy cts
+/system/etc/policy_nx6	u:object_r:selinuxfs:s0
+#endif
+#ifdef VENDOR_EDIT
+# Jiemin.Zhu@Swdp.Android.SELinux, 2015/07/07, add for oppoasserttip service
+/system/bin/asserttip	u:object_r:oppoasserttip_exec:s0
+#endif
+
+#ifdef VENDOR_EDIT
+#xiaopeng.li@camera team, 2015/05/23, Add for IIC laser af
+/dev/stm_sensor                                 u:object_r:stm_sensor_device:s0
+#endif
+
+#ifdef VENDOR_EDIT
+#xiaopeng.li@camera team, 2015/05/23, Add for IIC laser af
+/sys/bus/i2c/devices/i2c-0/0-0029/enable_ps_sensor                  u:object_r:sysfs_ps_sensor:s0
+#endif
+
+#ifdef VENDOR_EDIT
+#Lycan.Wang@Prd.BasicDrv, 2015-06-01 Add for fingerprint state
+/sys/devices/virtual/fpsensor/fpc1020/state                         u:object_r:sysfs_fp_state:s0
+#sfs_root path
+/data/misc/sfs(/.*)?                                                u:object_r:data_sfs_file:s0
+
+/system/bin/criticallog	u:object_r:criticallog_exec:s0
+
+#ifdef VENDOR_EDIT
+#Nanwei.Deng@PSW.BSP.Power.Basic.1056528, 2017/07/25, Add for bspCriticalLog
+/system/bin/bspCriticalLog	u:object_r:bspCriticalLog_exec:s0
+#endif
+#ifdef VENDOR_EDIT
+#Jianhua.Sun@Swdp.Android.Charge.QuickBoot, 2016/06/06, add for quickboot
+#/system/bin/quickboot u:object_r:quickboot_exec:s0
+#endif
+
+#ifdef VENDOR_EIDT
+#Yan.Bin@Swdp.Android.SELinux, 2016/06/06, add for oppo log
+/data/oppo_log(/.*)?	u:object_r:oppo_log_data_file:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#Qiang.shao@Prd6.system.SELinux, 2016/07/30, Add for define self-init type
+/system/bin/self-init   u:object_r:self_init_exec:s0
+#endif /*VENDOR_EDIT*/
+
+#ifdef VENDOR_EDIT
+#Dedong.Wei@Prd6.NW.AP.Cfg,824170,2016/11/12,Add for[region lock function]
+/system/bin/exp_lock   u:object_r:exp_lock_exec:s0
+#endif /*VENDOR_EDIT*/
+
+#ifdef COLOROS_EDIT
+#WangLan@Plf.Framework : Add for ssf
+/system/bin/ssfdaemon	u:object_r:ssfdaemon_exec:s0
+#endif
+
+#ifdef COLOROS_EDIT
+#ZhiYong.Lin@Plf.Framework : Add for ruril 2017-01-11
+/system/bin/rutilsdaemon    u:object_r:rutilsdaemon_exec:s0
+
+#ZhiYong.Lin@Plf.Framework : Add for datafree 2017-01-11
+/system/bin/datafree    u:object_r:datafree_exec:s0
+
+#ZhiYong.Lin@Plf.Framework : Add for backuprestore 2017-01-11
+/system/bin/br_app_data_service    u:object_r:backuprestore_exec:s0
+#endif
+
+#ifdef VENDOR_EDIT
+#Wei.Wang@PSW.Android.Storage.FileSystem.F2fs, 2017/02/17, Add for support resize userdata partition
+/system/bin/resize\.f2fs    u:object_r:resizef2fs_exec:s0
+#endif /* VENDOR_EIDT */
+#ifdef VENDOR_EDIT
+#Jiemin.Zhu@Swdp.Android.SELinux, 2016/12/28, add for oppo customization: oppo theme app
+/data/theme(/.*)?   u:object_r:oppo_theme_data_file:s0
+/data/system/font(/.*)?  u:object_r:oppo_font_data_file:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EIDT
+#Jiemin.Zhu@Swdp.Android.SELinux, 2016/11/08, add for protect dcim
+#Dubing@Plf.Frameworks, 2017/5/2, add for protect dcim
+#Jiemin.Zhu@Swdp.Android.SELinux, 2017/12/28, add for protect dcim
+/data/media/0/DCIM/Camera(/.*)?       u:object_r:media_rw_data_file:s0
+/data/media/0/DCIM/Screenshots(/.*)?       u:object_r:media_rw_data_file:s0
+/data/.recycle(/.*)?    u:object_r:oppo_recycle_file:s0
+#Added by Tangtao@Cam.Drv, 2017/09/18 for thirdparty setting
+/data/.camera(/.*)?                    u:object_r:data_camera_update:s0
+#endif /* VENDOR_EIDT */
+
+#ifdef VENDOR_EDIT
+#Haiping.Zhong@Swdp.Android.SELinux, 2017/02/19, add for file_contexts
+/autochmod\.sh          u:object_r:autochmod-sh_exec:s0
+/system/bin/autochmod\.sh          u:object_r:autochmod-sh_exec:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#Jiemin.Zhu@Swdp.Android.SELinux, 2017/03/13, add for sepolicy_debug
+/sepolicy_debug    u:object_r:rootfs:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#Junren.Jie@EXP.Android.Storage, 2017/05/04, Add for the resize bin path
+/system/bin/resize_ext4  u:object_r:resize_exec:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#WenFeng.Li@EXP.Android.EngineeringMode, 2017/05/06, Add for engshell
+/init\.oppo\.engineermode\.sh  u:object_r:engshell_exec:s0
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#Mengmeng.Wang@PSW2.AD.Oiface.1332554, 2018/03/20, Add for Oiface
+/system/bin/oiface   u:object_r:oiface_exec:s0
+#endif /* VENDOR_EIDT */
+
+#ifdef VENDOR_EDIT
+#Yadi.Xiao@PSW.NW.CFG, 2017/09/16, Add for read indicate
+/data/system/indicate  u:object_r:data_system_indicate:s0
+#endif /* VENDOR_EDIT */
+#ifdef VENDOR_EDIT
+#Mengmeng.Wang@PSW2.AD.Oiface.1332554, 2018/03/20, Add for Oiface
+/data/oiface                    u:object_r:oiface_data_file:s0
+#endif /* VENDOR_EDIT */
+

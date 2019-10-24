@@ -1,0 +1,11 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.phone.hide.2G.mode" />
+  <feature name="oppo.simsettings.mobile.data.enable" />
+  <feature name="oppo.phone.telstra.default.voicemail" />
+  <feature name="oppo.mms.max.size.2m" />
+  <feature name="oppo.bluetooth.not.discoverable" />
+  <feature name="oppo.contacts.operator.number" />
+  <feature name="oppo.simsettings.show.volte.off.dialog" />
+  <feature name="oppo.settings.hide.networkspeed" />
+</permissions>

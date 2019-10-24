@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<gs>
+    <!-- Instant Messaging -->
+    <p att="com.nd.android.pandareader"></p>
+    <p att="com.oppo.reader"></p>
+    <p att="com.duokan.reader"></p>
+    <p att="com.baidu.yuedu"></p>
+    <p att="com.ishugui"></p>
+    <p att="com.sogou.novel"></p>
+    <p att="com.byread.reader"></p>
+    <p att="com.ophone.reader.ui"></p>
+    <p att="cn.htjyb.reader"></p>
+    <p att="com.qq.reader"></p>
+    <p att="com.shuqi.controller"></p>
+    <p att="com.esbook.reader"></p>
+    <p att="com.kong.app.book"></p>
+    <p att="com.qifeng.qreader"></p>
+    <p att="com.ushaqi.zhuishushenqi"></p>
+    <p att="cn.com.rnmgplj.ggnkrk.rpj"></p>
+</gs>
