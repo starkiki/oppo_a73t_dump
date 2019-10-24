@@ -1,0 +1,44 @@
+##
+#
+# volte_rcs_ua specific system properties
+#
+on property:ril.volte.stack.rcsuaproxy=1
+		start volte_rcs_ua
+
+on property:ril.volte.stack.rcsuaproxy=0
+		stop volte_rcs_ua
+
+#
+# volte_uce_ua specific system properties
+#
+on property:ril.volte.stack.uceua=1
+            start volte_uce_ua
+
+on property:ril.volte.stack.uceua=0
+            stop volte_uce_ua
+
+#
+# volte_rcs_ua specific system service and socket information
+#
+service volte_rcs_ua /vendor/bin/volte_rcs_ua
+    class core
+    socket rcs_ua_proxy stream 666 root system
+    user system
+    group system log inet radio
+    oneshot
+    disabled
+
+#
+# volte_uce_ua specific system service and socket information
+#
+service volte_uce_ua /vendor/bin/volte_uce_ua
+    class core
+    socket volte_uce stream 666 root system
+    user system
+    group system log inet radio
+    oneshot
+    disabled
+
+#
+# VoLTE related services (End)
+#

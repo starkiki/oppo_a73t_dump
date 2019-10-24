@@ -1,0 +1,18 @@
+#exp common operator soft use
+#Qiang.shao@EXP.System.CommonOperatorSoft, 2016/07/30, Add for self_init domain to access block_device for init prop
+service prop-adap-core /system/bin/self-init core
+    class core
+    user root
+    oneshot
+
+service prop-adap-main /system/bin/self-init main
+    class main
+    user root
+    oneshot
+#exp region lock function
+#Dedong.Wei@EXP.NW.AP.Cfg, 824170, 2016/11/12,Add for[region lock function]
+service regioncheck /system/bin/exp_lock
+    class core
+    user root
+    group root
+    oneshot

@@ -1,0 +1,4 @@
+service faced /system/bin/faced
+    class late_start
+    user system
+    group system sdcard_rw sdcard_r

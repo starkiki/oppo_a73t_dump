@@ -1,0 +1,7 @@
+system/bpm/license.lic
+system/app/WebViewGoogle/WebViewGoogle.apk
+system/app/Chrome/Chrome.apk
+system/app/Maps/oat/arm64/Maps.odex
+system/priv-app/GmsCore/oat/arm/GmsCore.odex
+system/priv-app/GmsCore/oat/arm64/GmsCore.odex
+system/priv-app/Velvet/oat/arm64/Velvet.odex

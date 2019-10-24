@@ -1,0 +1,214 @@
+##################################################################################
+### Copyright 2014 OPPO Mobile Comm Corp., Ltd.
+### All rights reserved.
+###
+### Description     : Provide a function to critical service
+### History          :( ID, Date, Author, Description)
+### Author: Canjie.Zheng
+### TAG: PSW.Android.OppoDebug.JunkLog
+##################################################################################
+
+#ifdef VENDOR_EDIT
+#Yanzhen.Feng@PSW.Android.DebugTool.LayerDump, 2015/12/09, Add for SurfaceFlinger Layer dump
+service layerdump /system/bin/sh /autochmod.sh "layerdump"
+    class core
+    user root
+    disabled
+    seclabel u:r:nativedump:s0
+    oneshot
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#Yanzhen.Feng@PSW.Android.OppoDebug, 2017/03/20, Add for systrace on phone
+service cont_systrace /system/bin/sh /autochmod.sh "cont_systrace"
+    class core
+    user root
+    disabled
+    seclabel u:r:nativedump:s0
+    oneshot
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#Canjie.Zheng@PSW.Android.OppoDebug.JunkLog, 2016/08/04, Add for junk log.
+service junklogcat /system/bin/sh /autochmod.sh "junklogcat"
+    class main
+    user root
+    disabled
+    group system sdcard_rw sdcard_r
+    seclabel u:r:junklog:s0
+    oneshot
+
+service junkdmesg /system/bin/sh /autochmod.sh "junkdmesg"
+    class main
+    user root
+    disabled
+    group system sdcard_rw sdcard_r
+    seclabel u:r:junklog:s0
+    oneshot
+
+service junkststart /system/bin/sh /autochmod.sh "junkststart"
+    class main
+    user root
+    disabled
+    group system sdcard_rw sdcard_r
+    seclabel u:r:junklog:s0
+    oneshot
+
+service junkststop /system/bin/sh /autochmod.sh "junkststop"
+    class main
+    user root
+    disabled
+    group system sdcard_rw sdcard_r
+    seclabel u:r:junklog:s0
+    oneshot
+
+service junklog /system/bin/junklogcollector
+    class main
+    user system
+    group system sdcard_rw sdcard_r
+    seclabel u:r:junklog:s0
+
+
+service junklogmonitor /system/bin/sh /autochmod.sh "junklogmonitor"
+    class main
+    user system
+    group system sdcard_rw sdcard_r
+    disabled
+    seclabel u:r:junklog:s0
+    oneshot
+
+#endif /* VENDOR_EDIT */
+
+#ifdef VENDOR_EDIT
+#Nanwei.Deng@PSW.BSP.Power.Basic.1056528, 2017/07/25, Add for bspCriticalLog
+service bspCriticalLog /system/bin/bspCriticalLog
+    user system
+    group system
+    class main
+#endif /* VENDOR_EDIT */
+
+#Jianping.Zheng@PSW.Android.Stability.Hang.DeathHealer, 2017/05/08, Add for systemserver futex_wait block check
+service checkfutexwait /system/bin/sh /autochmod.sh "checkfutexwait"
+    class main
+    user root
+    group root
+    disabled
+    seclabel u:r:check_futexwait:s0
+#end, add for systemserver futex_wait block check
+
+#Jianping.Zheng@PSW.Android.Stability.Crash, 2017/04/04, Add for record performance
+service perf_record /system/bin/sh /autochmod.sh "perf_record"
+    class main
+    user root
+    group root
+    disabled
+    seclabel u:r:perf_record:s0
+
+#ifdef VENDOR_EDIT
+#Canjie.Zheng@PSW.Android.OppoDebug.JunkLog,2016/07/25,Add for junklog
+#start or stop base on the property
+on property:persist.sys.oppo.junklog=true
+    start junklog
+
+on property:persist.sys.oppo.junklog=false
+    start junklog
+#endif VENDOR_EDIT
+
+#ifdef VENDOR_EDIT
+#Haoran.Zhang@PSW.Android.BuildConfig.BaseConfig, 2016/09/22, Add for protect xkit
+#on init
+#   export XKIT /system/xbin/busybox
+#endif
+
+#ifdef VENDOR_EDIT
+#Deliang.Peng@PSW.MultiMedia.Display.Service.Log, 2017/7/7,add for native watchdog
+service nativedump /system/bin/sh /autochmod.sh "nativedump"
+    class core
+    user root
+    disabled
+    seclabel u:r:nativedump:s0
+    oneshot
+#endif /*VENDOR_EDIT*/
+
+#Canjie.Zheng@PSW.Android.OppoDebug.JunkLog, 2017/06/30, add for clan junk log.
+on property:sys.oppo.junkclean=1
+    start cleanjunk
+
+service cleanjunk system/bin/sh /autochmod.sh "cleanjunk"
+    class core
+    user root
+    disabled
+    seclabel u:r:junklog:s0
+    oneshot
+
+service cpfaceunlock system/bin/sh /autochmod.sh "cpfaceunlock"
+    class core
+    user root
+    disabled
+    seclabel u:r:junklog:s0
+    oneshot
+
+service powerlog system/bin/sh /autochmod.sh "powerlog"
+    class core
+    user root
+    disabled
+    seclabel u:r:junklog:s0
+    oneshot
+
+#Boning.Li@PSW.AD.OppoDebug.LogKit.1080426, 2016/08/06, Add screen record for oppo log.
+service screen_record /system/bin/sh /autochmod.sh "screen_record"
+    class core
+    user root
+    disabled
+    seclabel u:r:screen_record:s0
+    oneshot
+
+
+#Jianping.Zheng@PSW.Android.Stability.Hang.DeathHealer, 2017/05/08, Add for systemserver futex_wait block check
+on property:persist.sys.oppo.checkfutexwait=true
+    start checkfutexwait
+
+on property:persist.sys.oppo.checkfutexwait=false
+    stop checkfutexwait
+#end, add for systemserver futex_wait block check
+
+#Jianping.Zheng@PSW.Android.Stability.Crash, 2017/04/04, Add for record performance
+on property:persist.sys.oppo.perfrecord=true
+    start perf_record
+
+on property:persist.sys.oppo.perfrecord=false
+    stop perf_record
+#end add for record performance
+on property:persist.sys.assert.panic=false
+    start cpfaceunlock
+    start powerlog
+
+#ifdef VENDOR_EDIT
+#Haoran.Zhang@PSW.AD.BuildConfig.StandaloneUserdata.0, 2017/09/13, Add for [read new prop for feature StandaloneUserdata] 
+on post-fs-data
+   start datarefresh
+
+service datarefresh /system/bin/sh /autochmod.sh "userdatarefresh"
+    class core
+    user root
+    disabled
+    oneshot
+    seclabel u:r:engshell:s0
+
+#Canjie.Zhang@PSW.AD.OppoDebug.LogKit.1080426, 2017/11/09, Add for logkit2.0 clean log command
+service cleanlog /system/bin/sh /autochmod.sh "cleanlog"
+    class core
+    user root
+    disabled
+    seclabel u:r:junklog:s0
+    oneshot
+#endif
+
+#ifdef VENDOR_EDIT
+#Jiemin.Zhu@PSW.AD.Memroy.Performance.1137310, 2017/10/12, add for low memory device
+service oppolowram /system/bin/sh /autochmod.sh "oppolowram"
+    class core
+    user root
+    oneshot
+    seclabel u:r:rutilsdaemon:s0
+#endif
